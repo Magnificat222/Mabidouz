@@ -107,7 +107,7 @@ export const kreamag = {
     description: 'KReaMAG Academy accompagne les personnes qui souhaitent développer des compétences créatives et transformer leur savoir-faire en opportunités.',
     mission: 'Former. Créer. Gagner.',
     welcomeImage: '/assets/KReaMAG/Bienvenue KRéaMAG.png',
-    video: '/assets/KReaMAG/Vidéos Publicitaire.mp4'
+    video: 'https://www.youtube.com/embed/9RYqhFttqXM'
   },
   gallery: ['/assets/KReaMAG/Logo KReaMAG.png', '/assets/KReaMAG/KreaMAG Academy.jpg', '/assets/KReaMAG/Bienvenue KRéaMAG.png']
 }
@@ -168,15 +168,12 @@ export const aiMedia = [
   { id: 6, type: 'image', title: 'Réalisation IA 6', src: '/assets/Réalisation IA/file_000000008df071f4998ecaaf4dd9eb7a.png' },
   { id: 7, type: 'image', title: 'Réalisation IA 7', src: '/assets/Réalisation IA/file_0000000098ac71f48a38ab0048f1652f.png' },
   { id: 8, type: 'image', title: 'Réalisation IA 8', src: '/assets/Réalisation IA/file_000000009c9c724684dd2a5f791496fc_transcpr.jpg' },
-  { id: 9, type: 'image', title: 'Réalisation IA 9', src: '/assets/Réalisation IA/file_00000000c5e471f4b2a791997d8d01e2.png' },
   { id: 10, type: 'image', title: 'Réalisation IA 10', src: '/assets/Réalisation IA/file_00000000e0c871f4acd3846bc44ed59f.png' },
-  { id: 11, type: 'video', title: 'Réalisation IA — vidéo 1', src: '/assets/Réalisation IA/lv_0_20260303055751.mp4' },
-  { id: 12, type: 'video', title: 'Réalisation IA — vidéo 2', src: '/assets/Réalisation IA/YouCut_20260511_074135332.mp4' },
-  { id: 13, type: 'video', title: 'Réalisation IA — vidéo 3', src: '/assets/Réalisation IA/YouCut_20260512_132918280.mp4' },
-  { id: 14, type: 'video', title: 'Réalisation IA — vidéo 4', src: '/assets/Réalisation IA/YouCut_20260513_075529219.mp4' },
-  { id: 15, type: 'video', title: 'Réalisation IA — vidéo 5', src: '/assets/Réalisation IA/YouCut_20260608_100934808.mp4' },
-  { id: 16, type: 'video', title: 'Réalisation IA — vidéo 6', src: '/assets/Réalisation IA/YouCut_20260621_183111664.mp4' },
-  { id: 17, type: 'video', title: 'Réalisation IA — vidéo 7', src: '/assets/Réalisation IA/YouCut_20260707_081805626.mp4' }
+  { id: 11, type: 'video', title: 'Réalisation IA — vidéo 1', src: 'https://www.youtube.com/embed/bsKT6h5UZIM' },
+  { id: 12, type: 'video', title: 'Réalisation IA — vidéo 2', src: 'https://www.youtube.com/embed/SDzGkxgiJqg' },
+  { id: 13, type: 'video', title: 'Réalisation IA — vidéo 3', src: 'https://www.youtube.com/embed/2W5KDP6NfZM' },
+  { id: 14, type: 'video', title: 'Réalisation IA — vidéo 4', src: 'https://www.youtube.com/embed/ENxpwTqoJfE' },
+  { id: 15, type: 'video', title: 'Réalisation IA — vidéo 5', src: 'https://www.youtube.com/embed/5KpzBvez61k' }
 ]
 
 // KREAMAG CREATIONS
@@ -204,12 +201,6 @@ export const kreamagCreations = [
     title: 'Bracelets & Accessoires',
     category: 'Accessoires',
     image: '/assets/IMG_20251025_211950_094_transcpr.jpg'
-  },
-  {
-    id: 5,
-    title: 'Crochet & Textile',
-    category: 'Textile',
-    image: '/assets/IMG_20251025_213322_778_transcpr.jpg'
   },
   {
     id: 6,

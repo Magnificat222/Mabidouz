@@ -13,7 +13,7 @@ export const hero = {
   title: 'AI Creative Strategist',
   subtitle: 'Fondatrice de KReaMAG',
   description: 'Je transforme les idées en expériences créatives grâce à la stratégie, au design, au marketing et à l\'intelligence artificielle.',
-  cta: 'Entrer dans mon univers →'
+  cta: 'Entre dans mon univers →'
 }
 
 // ABOUT SECTION
@@ -189,24 +189,6 @@ export const kreamagCreations = [
     title: 'Tumblers Personnalisés',
     category: 'Tumblers',
     image: '/assets/Création résine/Tumblers.jpg'
-  },
-  {
-    id: 3,
-    title: 'Bijoux Créatifs',
-    category: 'Bijoux',
-    image: '/assets/IMG_20250926_093448_568_transcpr.jpg'
-  },
-  {
-    id: 4,
-    title: 'Bracelets & Accessoires',
-    category: 'Accessoires',
-    image: '/assets/IMG_20251025_211950_094_transcpr.jpg'
-  },
-  {
-    id: 6,
-    title: 'Résine Art',
-    category: 'Résine',
-    image: '/assets/IMG_20251025_213442_481_transcpr.jpg'
   },
   {
     id: 7,

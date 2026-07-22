@@ -132,14 +132,23 @@ export default function Home() {
               viewport={{ once: true }}
               className="relative h-80 rounded-lg overflow-hidden bg-black"
             >
-              <video
-                src={kreamag.academy.video}
-                className="w-full h-full object-cover"
-                controls
-                muted
-                playsInline
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-mab-black/60 to-transparent flex items-end p-6">
+              {kreamag.academy.video.includes('youtube.com/embed') ? (
+                <iframe
+                  src={kreamag.academy.video}
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              ) : (
+                <video
+                  src={kreamag.academy.video}
+                  className="w-full h-full object-cover"
+                  controls
+                  muted
+                  playsInline
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-mab-black/60 to-transparent flex items-end p-6 pointer-events-none">
                 <div>
                   <h3 className="text-2xl font-display font-bold text-mab-gold mb-2">
                     {kreamag.academy.title}
@@ -244,13 +253,22 @@ export default function Home() {
                   className="group cursor-pointer"
                 >
                   <div className="relative h-64 md:h-80 overflow-hidden rounded-lg bg-black">
-                    <video
-                      src={media.src}
-                      className="w-full h-full object-cover"
-                      controls
-                      muted
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    {media.src.includes('youtube.com/embed') ? (
+                      <iframe
+                        src={media.src}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    ) : (
+                      <video
+                        src={media.src}
+                        className="w-full h-full object-cover"
+                        controls
+                        muted
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
                       <h3 className="font-display text-xl font-bold text-white">
                         {media.title}
                       </h3>
@@ -375,17 +393,14 @@ export default function Home() {
             </a>
 
             {/* WhatsApp */}
-            <a
-              href={contact.whatsapp}
-              className="p-6 border border-mab-gold/30 rounded-lg hover:border-mab-gold/60 hover:bg-mab-gold/5 transition-all text-center group"
+            <motion.a
+              href="https://wa.me/2290151367676"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition"
             >
-              <p className="text-mab-gold font-semibold mb-2 group-hover:text-mab-offwhite transition-colors">
-                WhatsApp
-              </p>
-              <p className="text-mab-offwhite/70 text-sm break-all">
-                {contact.whatsapp}
-              </p>
-            </a>
+              Discuter sur WhatsApp
+            </motion.a>
 
             {/* Socials */}
             <div className="p-6 border border-mab-gold/30 rounded-lg hover:border-mab-gold/60 hover:bg-mab-gold/5 transition-all text-center">
